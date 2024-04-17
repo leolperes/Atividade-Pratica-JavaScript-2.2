@@ -20,7 +20,7 @@ function checarFormValido () {
     const campo1 = document.getElementById("login-email");
     const campo2 = document.getElementById("login-password");
 
-    if (campo1 !== "" & campo2 !== "") {
+    if (campo1.value !== "" & campo2.value !== "") {
         document.getElementById("botaoLogin").classList.replace("oculto", "show-flex");
     } else {
         document.getElementById("botaoLogin").classList.replace("show-flex", "oculto");

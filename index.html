@@ -16,7 +16,7 @@
 
     <nav>
           <div>
-            <button class="dropbtn" onclick="mostrarApenasHome()">
+            <button class="dropbtn" onclick="mostrarApenasHome('divHome', 'login-body', 'nova-conta')">
               <i class="menuIcon material-icons">home</i>
           </button>
            
@@ -28,16 +28,16 @@
             </button>
     
             <div id="acountDropdown" class="dropdown-content">
-              <a href="#" onclick="mostrarApenasLogin()">Fazer login</a>
+              <a href="#" onclick="mostrarApenasLogin('divHome', 'login-body', 'nova-conta')">Fazer login</a>
               <hr>
-              <a href="#" onclick="mostrarApenasConta()">Criar conta</a>
+              <a href="#" onclick="mostrarApenasConta('divHome', 'login-body', 'nova-conta')">Criar conta</a>
             </div>
           </div>
     </nav>
 
 
     <main>
-        <div id="divHome">
+        <div id="divHome" class="show">
         <h1>Prática - JavaScript (parte 2)</h1>
         
         <p>
@@ -160,7 +160,7 @@
           Div com id login-body será a tela de login
          -->
 
-        <div id="login-body">
+        <div id="login-body" class="oculto">
           <h1>Entrar</h1>
           <form>
               <label>E-mail:</label><input type="text">
@@ -182,7 +182,7 @@
           Div com id nova-conta será a tela de login
          -->
 
-      <div id="nova-conta">
+      <div id="nova-conta" class="oculto">
         <h1><i class="menuIcon material-icons">account_box</i> Criar nova conta</h1>
         <form>
         
